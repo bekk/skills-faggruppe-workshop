@@ -147,7 +147,7 @@ by-oppgaven):
    brukes. En vag beskrivelse ("Hjelper med byer") gjør at skillen aldri
    trigges av seg selv – det er den samme fellen som gotchaen fra
    presentasjonen.
-6. Be agenten bygge `SKILL.md` ut fra oppgaveteksten over.
+6. Lag selv eller be agenten bygge `SKILL.md` ut fra oppgaveteksten over.
 
 **Steg 3 – med skill:**
 7. Gi agenten *nøyaktig samme* oppgavetekst som i steg 1: "Legg til Bergen
