@@ -130,9 +130,6 @@ det, er det ingen grunn til at den skal gjøre det av seg selv.
 
 **Steg 2 – bygg skillen:**
 
-Oppgavetekst (gis til agenten for å *bygge* skillen – ikke selve
-by-oppgaven):
-
 > "Lag en skill som legger til en ny by i Bekkværet. Skillen skal:
 > 1. Spørre brukeren om bynavnet, og om et norsk kallenavn for byen
 > 2. Spørre om Bekk har kontor i byen eller ikke
