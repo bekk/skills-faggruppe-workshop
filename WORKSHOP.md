@@ -122,7 +122,7 @@ det, er det ingen grunn til at den skal gjøre det av seg selv.
 **Steg 1 – uten skill:**
 1. Sørg for at repoet ikke har noen skill for dette ennå.
 2. Gi agenten oppgaveteksten over. La den jobbe ferdig.
-3. Noter: Spurte den om noe underveis (kallenavn, kontor), eller
+3. Legg merke til: Spurte den om noe underveis (kallenavn, kontor), eller
    gjettet/utelot den det? Hvilke filer endret den (`cities.ts`? `types.ts`?
    noe i komponentene?)? Hva ser dere visuelt på Bergen-kortet sammenlignet
    med Oslo/Trondheim?
