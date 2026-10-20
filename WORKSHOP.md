@@ -4,9 +4,7 @@ Praktisk del av faggruppemøtet "Kom i gang med AI-assistert koding" – møte 2
 Samme prinsipp som sist: dere kjenner forskjellen selv, i stedet for bare å
 høre om den.
 
-Møtet dekker kun instruksjonsfiler og skills (90 min reelt er ikke nok til
-agent-/subagent-filer også) – den delen tas i et senere møte, sammen med
-agenttyper/orkestrering.
+Møtet dekker kun instruksjonsfiler og skills
 
 ## Forberedelser
 
