@@ -4,13 +4,18 @@ Praktisk del av faggruppemøtet "Kom i gang med AI-assistert koding" – møte 2
 Samme prinsipp som sist: dere kjenner forskjellen selv, i stedet for bare å
 høre om den.
 
-Møtet dekker kun instruksjonsfiler og skills
+Møtet dekker kun instruksjonsfiler og skills (90 min reelt er ikke nok til
+agent-/subagent-filer også) – den delen tas i et senere møte, sammen med
+agenttyper/orkestrering.
 
 ## Forberedelser
 
-- Et agentisk kodeverktøy dere allerede har satt opp (Claude Code, OpenCode,
-  Cursor, eller tilsvarende) – bruk det dere er vant med.
+- Et agentisk kodeverktøy dere allerede har satt opp (OpenCode, Cursor,
+  eller tilsvarende) – bruk det dere er vant med.
 - Node + npm installert.
+- Vi bruker filnavnet `AGENTS.md` i denne workshopen. Bruker dere Claude
+  Code, kan dere kalle filen `CLAUDE.md` i stedet — den leses på nøyaktig
+  samme måte.
 - **Bekkværet-starteren**, delt som eget GitHub-repo før møtet. Dette er en
   fungerende værapp (Oslo/Trondheim, React + TypeScript + Vite, værdata fra
   met.no) – bevisst **uten** noen instruksjonsfil eller skills fra start.
@@ -25,7 +30,7 @@ Møtet dekker kun instruksjonsfiler og skills
 
 ## Del 1: Instruksjonsfiler – kjenn forskjellen selv
 
-**Mål:** Se konkret hva en god `CLAUDE.md`/`AGENTS.md` faktisk endrer på
+**Mål:** Se konkret hva en god `AGENTS.md` faktisk endrer på
 agentens output – ikke bare høre om det.
 
 **Oppgaveteksten (brukes ord for ord, begge ganger):**
@@ -38,7 +43,7 @@ hvordan vindretning skal vises, eller hvilken tone den skal ha. Det er
 akkurat det gapet en instruksjonsfil er ment å tette.
 
 **Steg 1 – uten fil:**
-1. Sørg for at repoet er rent og ikke har noen `CLAUDE.md`/`AGENTS.md`.
+1. Sørg for at repoet er rent og ikke har noen `AGENTS.md`.
 2. Gi agenten oppgaveteksten over. La den jobbe ferdig.
 3. Noter: Hvor la den koden (inline i komponenten, eller i et eget lag)?
    Hvordan vises vindretning (forkortelse, gradtall, eller norsk ord)? Er
@@ -47,7 +52,7 @@ akkurat det gapet en instruksjonsfil er ment å tette.
    slik at repoet er rent igjen.
 
 **Steg 2 – med fil:**
-5. Legg til CLAUDE.md-eksempelet under i repoets rot.
+5. Legg til AGENTS.md-eksempelet under i repoets rot.
 6. **Viktig:** start en *frisk* agent-sesjon – ikke fortsett i samme samtale.
    Poenget er at filen alene skal gi konteksten, ikke noe agenten husker fra
    forsøk nummer én.
@@ -56,7 +61,7 @@ akkurat det gapet en instruksjonsfil er ment å tette.
    for værdata-parsing, riktig fil for typer)? Ble vindretning vist på norsk,
    med ord? Er tonen koselig, slik resten av appen er?
 
-**CLAUDE.md-eksempel (lim inn i repoets rot før steg 2):**
+**AGENTS.md-eksempel (lim inn i repoets rot før steg 2):**
 
 ```
 # Bekkværet
@@ -86,6 +91,7 @@ En koselig værapp for byene Bekk har folk i. Viser nåværende temperatur og v�
 - Komponenter i PascalCase, én fil per komponent i src/components/
 - All kommunikasjon med met.no skjer i src/api/metno.ts, aldri inline i komponenter
 - Følg feilhåndteringsmønsteret fra WeatherCard.tsx (loading/error/ready) for nye datahentinger
+- Appen skal alltid vise mørk modus (dark mode) — ikke lys modus, og ikke noe valg mellom dem
 
 ## Dine egne regler
 <!-- Legg til 1–2 regler du selv mener trengs. Forslag: testdekning,
@@ -170,15 +176,15 @@ by-oppgaven):
 
 *For de som rekker det i møtet, eller vil fortsette hjemme.*
 
-- **Prøv `/init`** (eller det nærmeste tilsvarende i verktøyet deres, hvis
-  dere ikke bruker Claude Code – sjekk om verktøyet har en kommando for å
-  generere en instruksjonsfil automatisk fra kodebasen). Sammenlign det
-  genererte resultatet med CLAUDE.md-filen dere skrev for hånd i Del 1.
+- **Prøv en automatisk generert instruksjonsfil** (sjekk om verktøyet deres
+  har en innebygd kommando for å generere en instruksjonsfil fra
+  kodebasen). Sammenlign det genererte resultatet med AGENTS.md-filen dere
+  skrev for hånd i Del 1.
 - **Be agenten forbedre egne filer:** be den kritisere og foreslå
-  forbedringer til både CLAUDE.md-en og skillen dere skrev.
+  forbedringer til både AGENTS.md-en og skillen dere skrev.
 - **Last ned en skrive-skill:** hent Matt Pocock sin `/writing-for-agents`
   ([github.com/mattpocock/skills](https://github.com/mattpocock/skills)) og
-  bruk den til å forbedre CLAUDE.md-en eller skillen deres. Les gjennom
+  bruk den til å forbedre AGENTS.md-en eller skillen deres. Les gjennom
   skillen *før* dere tar den i bruk – samme prinsipp som gotchaen om tillit
   ved nedlasting fra presentasjonen.
 - **Tenk over kundeprosjektet deres:** hvor i prosjektet ville en
